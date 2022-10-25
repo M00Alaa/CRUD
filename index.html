@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bg-info rounded mt-3 w-75 m-auto p-5">
+      <label>product name</label>
+      <input id="productName" type="text" class="form-control" />
+      <label>product price</label>
+      <input id="productPrice" type="number" class="form-control" />
+      <label>product category</label>
+      <input id="productCategory" type="text" class="form-control" />
+      <label>product description</label>
+      <textarea id="productDesc" class="form-control"></textarea>
+
+      <button id="addBtn" class="btn btn-primary my-3 float-end">
+        add product
+      </button>
+      <div class="clearfix"></div>
+
+      <input id="searchInput" type="text" class="form-control my-3" placeholder="search by name....." />
+
+      <table class="table">
+        <thead>
+          <th>Name</th>
+          <th>price</th>
+          <th>category</th>
+          <th>description</th>
+          <th></th>
+          <th></th>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
